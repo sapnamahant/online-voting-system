@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System | www.ovs.com</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section id="header-section">
+        <h1>Online Voting System</h1>
+    </section>
+    <hr>
+
+    <section id="form-section">
+        <form action="api/login.php" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <input type="number" name="mobile" id="mobile" placeholder="Enter Mobile Number"><br><br>
+                <input type="password" name="password" id="password" placeholder="Enter Password"><br><br>
+                <div>
+                    <label for="role">Type: </label>
+                    <select name="role" id="dropbox">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div><br>
+                <button type="submit" id="login-btn">Login</button><br><br>
+                <div>
+                    New User? <a href="routes/register.html">Register Here</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+
+</html>

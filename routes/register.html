@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System | Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <section id="header-section">
+        <h1>Online Voting System</h1>
+    </section>
+    <hr>
+
+    <section id="form-section">
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Registration</legend>
+                <div>
+                    <input type="text" name="name" placeholder="Enter name">
+                    <input type="number" name="mobile" placeholder="Enter mobile number">
+                </div><br>
+                <div>
+                    <input type="password" name="password" placeholder="Enter password">
+                    <input type="password" name="cpassword" placeholder="Confirm password ">
+                </div><br>
+                
+                <input type="text" name="address" placeholder="Enter address" id="addr"><br><br>
+                
+                <div id="image-div">
+                    <label for="photo" style="margin-left: 33px;">Upload Image: </label>
+                    <input type="file" name="photo" style="max-width: 200px;">
+                </div><br>
+                
+                <div id="select-div">
+                    <label for="roles">Type: </label>
+                    <select name="roles" id="dropbox">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div><br>
+                <button type="submit" id="register-btn">Register</button><br><br>
+                <div>
+                    Already User? <a href="../index.html">Login Here</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
